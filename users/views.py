@@ -8,6 +8,7 @@ from .utils import send_otp_via_email
 from django.utils import timezone
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.views import APIView
+from rest_framework_simplejwt.tokens import RefreshToken
 
 
 class RegisterView(generics.GenericAPIView):
